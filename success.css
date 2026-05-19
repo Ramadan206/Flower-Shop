@@ -1,0 +1,141 @@
+/* إعدادات الخط والاتجاه العام */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf2f5; /* لون وردي خفيف جداً يناسب محل زهور */
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* التنسيق العلوي والقائمة */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d81b60;
+    font-weight: bold;
+}
+
+h1 {
+    color: #880e4f;
+    margin-bottom: 30px;
+}
+
+/* حاوية النموذج */
+.checkout-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group-section {
+    margin-bottom: 25px;
+}
+
+h3 {
+    border-bottom: 2px solid #fce4ec;
+    padding-bottom: 10px;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* تنسيق الحقول */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #d81b60;
+}
+
+/* خيارات الدفع */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.payment-card {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.payment-card:hover {
+    background-color: #fff8fa;
+}
+
+.payment-card input {
+    margin-left: 10px;
+}
+
+/* حقول البطاقة (تظهر عند الحاجة) */
+.card-details-fields {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* زر الإرسال */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #ad1457;
+}
